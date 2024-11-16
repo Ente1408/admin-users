@@ -58,6 +58,7 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL'),
+    //'asset_url' => ('/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +84,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +97,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +110,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'es_ES',
 
     /*
     |--------------------------------------------------------------------------
@@ -168,6 +169,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -185,4 +187,14 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'languages' => [
+        'en' => 'English',
+        'es' => 'Spanish',
+    ],
+
+    'logo' => env('APP_LOGO', 'logo.png'),
+
+    'author' => env('APP_AUTHOR', config('app.name')),
+
+    'year_copyright' => env('APP_YEAR_COPYRIGHT', date('Y')),
 ];
