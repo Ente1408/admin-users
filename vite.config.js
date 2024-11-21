@@ -11,4 +11,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        https: true, // Fuerza HTTPS en el entorno de desarrollo
+    },
 });
