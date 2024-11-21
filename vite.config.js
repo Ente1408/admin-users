@@ -13,5 +13,6 @@ export default defineConfig({
     ],
     server: {
         https: true, // Fuerza HTTPS en el entorno de desarrollo
+        host: 'localhost',
     },
 });
